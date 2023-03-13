@@ -4,10 +4,11 @@ import Typewriter from "./Typewriter";
 const Flag = () => {
   const [posts, setPosts] = useState([]);
 
+  const baseUrl =
+    "https://wgg522pwivhvi5gqsn675gth3q0otdja.lambda-url.us-east-1.on.aws/77726f";
+
   useEffect(() => {
-    fetch(
-      "https://wgg522pwivhvi5gqsn675gth3q0otdja.lambda-url.us-east-1.on.aws/77726f"
-    )
+    fetch(`${baseUrl}`)
       .then((res) => res.text())
       .then((data) => {
         setPosts(data);
