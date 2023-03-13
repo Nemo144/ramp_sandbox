@@ -17,11 +17,9 @@ const Flag = () => {
       });
   }, []);
 
-  const textToRender = posts;
-
   return (
     <div>
-      <Typewriter text={textToRender} interval={200} Markup={"code"} />
+      <Typewriter text={posts} interval={500} Markup={"code"} />
     </div>
   );
 };
