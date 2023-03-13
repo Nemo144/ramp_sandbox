@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 
 export default function Typewriter({
   text = [],
-  interval = 100,
-  Markup = "span"
+  interval = "",
+  Markup = "span",
 }) {
   const [typedText, setTypedText] = useState([]);
 
