@@ -27,14 +27,5 @@ export default function Typewriter({
     typingRender(text, setTypedText, interval);
   }, [text, interval]);
 
-  const splitRender = (
-    <ul>
-      {typedText.split("").map((text) => (
-        <li>{text}</li>
-      ))}
-    </ul>
-  );
-  console.log(splitRender);
-
-  return <Markup>{splitRender}</Markup>;
+  return <Markup>{typedText}</Markup>;
 }
