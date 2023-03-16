@@ -1,10 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function Typewriter({
-  text = [],
-  interval = "",
-  Markup = "span",
-}) {
+export default function Typewriter({ text, interval, Markup }) {
   const [typedText, setTypedText] = useState([]);
 
   const typingRender = (text, updater, interval) => {
